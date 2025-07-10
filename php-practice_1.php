@@ -67,7 +67,7 @@ $prefecturalCapitalLocation = [
     '埼玉県' => 'さいたま市',
     '栃木県' => '宇都宮市',
     '群馬県' => '前橋市',
-    '茨城県' => '水戸市'
+    '茨城県' => '水戸市',
 ];
 
 foreach ($prefecturalCapitalLocation as $capital) {
@@ -89,7 +89,7 @@ $prefecturalCapitalLocation = [
     '埼玉県' => 'さいたま市',
     '栃木県' => '宇都宮市',
     '群馬県' => '前橋市',
-    '茨城県' => '水戸市'
+    '茨城県' => '水戸市',
 ];
 
 //foreachで県庁所在地リストを回し、入力値と比較する。
@@ -111,12 +111,12 @@ $$prefecturalCapitalLocation = [
     '埼玉県' => 'さいたま市',
     '栃木県' => '宇都宮市',
     '群馬県' => '前橋市',
-    '茨城県' => '水戸市'
+    '茨城県' => '水戸市',
 ];
 //県庁所在地配列に関東以外の都道府県を追加する。
 $prefecturalCapitalLocation += [
     '愛知県' => '名古屋市',
-    '大阪府' => '大阪市'
+    '大阪府' => '大阪市',
 ];
 //配列の最後のキーを記録する。
 $last_index = array_key_last($prefecturalCapitalLocation);
