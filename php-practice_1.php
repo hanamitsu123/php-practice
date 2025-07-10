@@ -27,19 +27,24 @@ echo '現在時刻は、' . date("Y年m月d日 H時i分s秒") . 'です。';
 $device = 'mac';
 //使用OSを判定する。
 if ($device === 'windows') {
-  echo '使用OSは、windowsです。';
-
+    echo '使用OSは、windowsです。';
 } else {
 
-    if($device === 'mac') {
+if ($device === 'mac') {
 
-        echo '使用OSは、macです。';
+    echo '使用OSは、macです。';
 
-    } else {
+}
+if ($device === 'windows') {
 
-        echo 'どちらでもありません。';
+    echo '使用OSは、windowsです。';
 
-    }
+}
+if ($device !== 'mac' AND $device !== 'windows') {
+
+    echo 'どちらでもありません。';
+
+}
 }
 
 // Q5 条件分岐-2 三項演算子
