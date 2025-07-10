@@ -1,9 +1,9 @@
 <!-- Q1 変数と文字列 -->
 <?php
 
-$my_name = '德永';
+$myName = '德永';
 
-echo '私の名前は「' . $my_name . '」です。';
+echo '私の名前は「' . $myName . '」です。';
 
 // Q2 四則演算
 <?php
@@ -22,7 +22,6 @@ echo $num;
 echo '現在時刻は、' . date("Y年m月d日 H時i分s秒") . 'です。';
 
 // Q4 条件分岐-1 if文
-//入力値
 <?php
 //入力値
 $device = 'mac';
@@ -54,14 +53,14 @@ echo $message;
 
 // Q6 配列
 <?php
-$kanto_area = ['東京都', '埼玉県', '栃木県', '千葉県', '神奈川県', '群馬県', '茨城県'];
+$kantoArea = ['東京都', '埼玉県', '栃木県', '千葉県', '神奈川県', '群馬県', '茨城県'];
 
-echo "{$kanto_area[2]}と{$kanto_area[3]}は関東地方の都道府県です。";
+echo "{$kantoArea[2]}と{$kantoArea[3]}は関東地方の都道府県です。";
 
 // Q7 連想配列-1
 <?php
 
-$prefectural_capital_location = [
+$prefecturalCapitalLocation = [
     '東京都' => '新宿区',
     '神奈川県' => '横浜市',
     '千葉県' => '千葉市',
@@ -71,7 +70,7 @@ $prefectural_capital_location = [
     '茨城県' => '水戸市'
 ];
 
-foreach ($prefectural_capital_location as $capital) {
+foreach ($prefecturalCapitalLocation as $capital) {
 
   echo $capital . "\n";
 
@@ -83,7 +82,7 @@ foreach ($prefectural_capital_location as $capital) {
 $input = '茨城県';
 
 //関東圏の県庁所在地リスト
-$prefectural_capital_location = [
+$prefecturalCapitalLocation = [
     '東京都' => '新宿区',
     '神奈川県' => '横浜市',
     '千葉県' => '千葉市',
@@ -94,7 +93,7 @@ $prefectural_capital_location = [
 ];
 
 //foreachで県庁所在地リストを回し、入力値と比較する。
-foreach ($prefectural_capital_location as $prefecture => $capital) {
+foreach ($prefecturalCapitalLocation as $prefecture => $capital) {
 
     if ($input === $prefecture) {
         echo $prefecture . 'の県庁所在地は' . $capital . 'です';
@@ -105,7 +104,7 @@ foreach ($prefectural_capital_location as $prefecture => $capital) {
 // Q9 連想配列-3
 <?php
 //関東圏の県庁所在地配列
-$prefectural_capital_location = [
+$$prefecturalCapitalLocation = [
     '東京都' => '新宿区',
     '神奈川県' => '横浜市',
     '千葉県' => '千葉市',
@@ -115,15 +114,15 @@ $prefectural_capital_location = [
     '茨城県' => '水戸市'
 ];
 //県庁所在地配列に関東以外の都道府県を追加する。
-$prefectural_capital_location += [
+$prefecturalCapitalLocation += [
     '愛知県' => '名古屋市',
     '大阪府' => '大阪市'
 ];
 //配列の最後のキーを記録する。
-$last_index = array_key_last($prefectural_capital_location);
+$last_index = array_key_last($prefecturalCapitalLocation);
 
 //foreachで県庁所在地リストを回し、入力値と比較する。
-foreach ($prefectural_capital_location as $prefecture => $capital) {
+foreach ($prefecturalCapitalLocation as $prefecture => $capital) {
 
     //関東圏かどうかを判定する。
     if ($prefecture === '愛知県' or $prefecture === '大阪府') {
