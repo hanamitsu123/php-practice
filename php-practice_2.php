@@ -130,7 +130,7 @@ class Student
 
 $student = new Student(999, "フレディ");
 
-echo '学籍番号' . $student -> studentId . '番の生徒は' . $student -> studentName . 'です。';
+echo '学籍番号' . $student->studentId . '番の生徒は' . $student->studentName . 'です。';
 
 // Q4 オブジェクト-2
 <?php
@@ -147,8 +147,8 @@ class Student
 
     public function attend($subject)
     {
-        echo $this ->studentName . "は" . $subject . 'の授業に参加しました。'
-        . '学籍番号:' . $this -> studentId;
+        echo $this->studentName . "は" . $subject . 'の授業に参加しました。'
+        . '学籍番号:' . $this->studentId;
     }
 }
 
@@ -160,17 +160,17 @@ $yamada->attend('PHP');
 <?php
 $lastMonth =  new DateTime();
 //先月の日付に変更します。
-$lastMonth -> modify('-1 month');
+$lastMonth->modify('-1 month');
 //string型へ変換します。
-echo $lastMonth -> format('Y-m-d');
+echo $lastMonth->format('Y-m-d');
 
 //問題2
 <?php
 $theCurrent =  new DateTime();
 //過去の日付を代入します。
 $thePast = new DateTime();
-$thePast -> setDate(1994, 3, 2);
+$thePast->setDate(1994, 3, 2);
 //差分を求めます。
-$difference = $theCurrent -> diff($thePast);
+$difference = $theCurrent->diff($thePast);
 
-echo 'あの日から' . $difference -> days . '日経過しました。';
+echo 'あの日から' . $difference->days . '日経過しました。';
