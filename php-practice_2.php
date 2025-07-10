@@ -35,17 +35,17 @@ $personalInfos = [
     [
         'name' => 'Aさん',
         'mail' => 'aaa@mail.com',
-        'tel'  => '09011112222'
+        'tel'  => '09011112222',
     ],
     [
         'name' => 'Bさん',
         'mail' => 'bbb@mail.com',
-        'tel'  => '08033334444'
+        'tel'  => '08033334444',
     ],
     [
         'name' => 'Cさん',
         'mail' => 'ccc@mail.com',
-        'tel'  => '09055556666'
+        'tel'  => '09055556666',
     ],
 ];
 
@@ -58,17 +58,17 @@ $personalInfos = [
     [
         'name' => 'Aさん',
         'mail' => 'aaa@mail.com',
-        'tel'  => '09011112222'
+        'tel'  => '09011112222',
     ],
     [
         'name' => 'Bさん',
         'mail' => 'bbb@mail.com',
-        'tel'  => '08033334444'
+        'tel'  => '08033334444',
     ],
     [
         'name' => 'Cさん',
         'mail' => 'ccc@mail.com',
-        'tel'  => '09055556666'
+        'tel'  => '09055556666',
     ],
 ];
 //キーとバリューに分けます。
@@ -85,17 +85,17 @@ $personalInfos = [
     [
         'name' => 'Aさん',
         'mail' => 'aaa@mail.com',
-        'tel'  => '09011112222'
+        'tel'  => '09011112222',
     ],
     [
         'name' => 'Bさん',
         'mail' => 'bbb@mail.com',
-        'tel'  => '08033334444'
+        'tel'  => '08033334444',
     ],
     [
         'name' => 'Cさん',
         'mail' => 'ccc@mail.com',
-        'tel'  => '09055556666'
+        'tel'  => '09055556666',
     ],
 ];
 
