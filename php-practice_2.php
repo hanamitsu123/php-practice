@@ -1,30 +1,22 @@
 // Q1 tic-tac問題
 <?php
 echo '1から100までのカウントを開始します' . "\n\n";
-
 for ($i = 1; $i <= 100; $i++) {
     // 4と5の公倍数であるかを判定し、trueの場合にはtic-tacを出力する。
     if ($i % 4 === 0 AND $i % 5 === 0) {
-
         echo 'tic-tac';
     // 4の倍数であるかを判定し、trueの場合にはticを出力する。
     } elseif ($i % 4 === 0) {
-
         echo 'tic';
     // 5の倍数であるかを判定し、trueの場合にはtacを出力する。
     } elseif ($i % 5 === 0) {
-
         echo 'tac';
     // それ以外の値は、そのまま出力する。
     } else {
-
         echo $i;
-
     }
     if ($i !== 100) {
-
         echo "\n";
-
     }
 }
 
@@ -48,12 +40,10 @@ $personalInfos = [
         'tel'  => '09055556666',
     ],
 ];
-
 echo $personalInfos[1]['name'] . 'の電話番号は' . $personalInfos[1]['tel'] . 'です。';
 
 //問題2
 <?php
-
 $personalInfos = [
     [
         'name' => 'Aさん',
@@ -73,10 +63,8 @@ $personalInfos = [
 ];
 //キーとバリューに分けます。
 foreach ($personalInfos as $personInfo => $info) {
-
     echo ($personInfo + 1) . '番目の' . $info['name']
     . 'のメールアドレスは' . $info['mail'] . 'で、電話番号は' . $info['tel'] . "です。\n";
-
 }
 
 //問題3
@@ -98,15 +86,10 @@ $personalInfos = [
         'tel'  => '09055556666',
     ],
 ];
-
 $ageList = [25, 30, 18];
-
 foreach ($personalInfos as $personalInfo => $infoTypes) {
-
     $personalInfos[$personalInfo]['age'] = $ageList [$personalInfo];
-
 }
-
 var_dump($personalInfos);
 
 // Q3 オブジェクト-1
@@ -127,9 +110,7 @@ class Student
         echo '授業に出席しました。';
     }
 }
-
 $student = new Student(999, "フレディ");
-
 echo '学籍番号' . $student->studentId . '番の生徒は' . $student->studentName . 'です。';
 
 // Q4 オブジェクト-2
@@ -151,7 +132,6 @@ class Student
         . '学籍番号:' . $this->studentId;
     }
 }
-
 $yamada = new Student(120, '山田');
 $yamada->attend('PHP');
 
@@ -172,5 +152,4 @@ $thePast = new DateTime();
 $thePast->setDate(1994, 3, 2);
 //差分を求めます。
 $difference = $theCurrent->diff($thePast);
-
 echo 'あの日から' . $difference->days . '日経過しました。';
